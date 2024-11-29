@@ -1,0 +1,84 @@
+body {
+  background-image: url('/Website/Images/Background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the navigation bar */
+#nav_bar {
+  background-color: rgba(51, 51, 51, 1);
+  height: 60px;
+  display: flex;
+  justify-content: center; /* Center the nav items horizontally */
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Style for the navigation list */
+#nav_bar ul {
+  list-style-type: none;
+  display: flex; /* Flexbox to align nav items side by side */
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for the individual navigation items */
+.tools {
+  margin-right: 10%;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 0 20px; /* Add 20px spacing between the nav items */
+}
+
+/* Style for the links */
+#nav_bar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 150%; /* Increase font size */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#nav_bar a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#nav_bar a:active {
+  color: black;
+  background-color: gray;
+}
+
+/* Container for the image */
+.Brand {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+img {
+  max-width: 100%;
+  box-shadow: 0 5px 10px silver;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  #nav_bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tools {
+    margin: 10px 0; /* Vertical margin for stacked items */
+  }
+}

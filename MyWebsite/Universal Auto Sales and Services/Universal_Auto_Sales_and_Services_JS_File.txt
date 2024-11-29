@@ -1,0 +1,49 @@
+class AutoTrade {
+    constructor() {
+        this.sales = [];
+    }
+
+    // Method to add a sale
+    addSale(sale) {
+        this.sales.push(sale);
+        console.log(`Sale added: ${sale}`);
+    }
+
+    // Method to remove a sale by index
+    removeSale(index) {
+        if (index >= 0 && index < this.sales.length) {
+            const removedSale = this.sales.splice(index, 1);
+            console.log(`Sale removed: ${removedSale}`);
+        } else {
+            console.log('Invalid index. Please try again.');
+        }
+    }
+
+    // Method to display all sales
+    displaySales() {
+        if (this.sales.length === 0) {
+            console.log('No sales to display.');
+        } else {
+            console.log('Current Sales:');
+            this.sales.forEach((sale, index) => {
+                console.log(`${index}: ${sale}`);
+            });
+        }
+    }
+}
+
+// Example usage:
+const autoTrade = new AutoTrade();
+
+// Adding sales
+autoTrade.addSale('2023 Honda Accord - $24,000');
+autoTrade.addSale('2022 Toyota Camry - $26,000');
+
+// Displaying sales
+autoTrade.displaySales();
+
+// Removing a sale
+autoTrade.removeSale(0); // Remove the first sale
+
+// Displaying sales again
+autoTrade.displaySales();

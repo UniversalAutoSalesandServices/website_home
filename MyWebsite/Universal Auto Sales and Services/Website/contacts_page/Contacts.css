@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+#nav_bar {
+  background-color: #222;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav_bar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#nav_bar li {
+  margin: 0 15px;
+}
+
+#nav_bar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#nav_bar a:hover {
+  background-color: red;
+  border-radius: 5px;
+}
+
+/* Brand Image */
+.Brand {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.Brand img {
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.contact-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.contact-info {
+  margin: 30px 0;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  color: white;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #222;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: darkred;
+}
+
+/* Google Maps Section */
+.map-container {
+  margin: 50px auto;
+  width: 50%;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.map-container h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  margin-top: 10px;
+  color: #888;
+}
