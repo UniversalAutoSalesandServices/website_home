@@ -1,0 +1,138 @@
+/* Body */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Georgia, serif;
+  background: url('/Website/Images/Background_3.jpg') center/cover no-repeat black;
+  background-attachment: fixed;
+}
+
+/* Main content container */
+main {
+  flex-grow: 1; /* Ensures main content expands to fill available space */
+}
+
+/* Brand logo */
+#brand {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+#brand img {
+  border-radius: 20px;
+  border: 1px white solid;
+  box-shadow: 0 5px 10px white;
+}
+
+/* Navigation Bar */
+#nav_bar {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#nav_bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav_bar li {
+  border: 1px solid white;
+  background-color: black;
+  width: 350px;
+  margin-left: 20px; /* Center each item with vertical spacing */
+  margin-top: 10px;
+  border-radius: 50px;
+}
+
+/* Anchor styling */
+#nav_bar a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+#nav_bar a:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 0 20px white;
+  border-radius: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #888;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: auto; /* Pushes footer to the bottom */
+  width: 100%; /* Ensures footer spans the full width */
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  margin-top: 10px;
+  color: yellow;
+  font-size: 0.9em;
+  border-top: 1px solid yellow;
+  padding-top: 10px;
+}
+
+/* Back to Top Button */
+#top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  line-height: 45px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#top-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #nav_bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #top-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 38px;
+  }
+}
